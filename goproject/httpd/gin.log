@@ -1,0 +1,16 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> goproject/httpd/handler.PingGet (3 handlers)
+[GIN-debug] GET    /files                    --> goproject/httpd/handler.FilesGet.func1 (3 handlers)
+[GIN-debug] POST   /files                    --> goproject/httpd/handler.FilesPost.func1 (3 handlers)
+[GIN-debug] GET    /user                     --> main.main.func2 (3 handlers)
+[GIN-debug] POST   /post_form                --> main.main.func3 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2021/06/24 - 17:54:07 | 200 |  5.003858326s |       127.0.0.1 | GET      "/ping"
+[GIN] 2021/06/24 - 17:54:15 | 200 |  5.002315825s |       127.0.0.1 | GET      "/ping"
+[GIN] 2021/06/24 - 17:54:18 | 200 |  5.001575547s |       127.0.0.1 | GET      "/ping"
+[GIN] 2021/06/24 - 18:07:52 | 200 |  5.002321456s |       127.0.0.1 | GET      "/ping"
+[GIN] 2021/06/24 - 18:07:54 | 200 |  5.000440539s |       127.0.0.1 | GET      "/ping"
+[GIN] 2021/06/24 - 18:26:09 | 500 |    3.802501ms |             ::1 | POST     "/files"
